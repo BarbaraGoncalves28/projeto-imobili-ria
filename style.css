@@ -40,12 +40,37 @@ header h2{
 
 input{
     display: block;
+    font-size: 16px;
     margin: auto;
     width: 500px;
     height: 50px;
     border-radius: 50px;
-    outline: none;
     border: none;
+    padding-left: 20px;
+    outline: none;
+}
+
+button{
+
+    display: block;
+    margin: auto;
+    position: relative;
+    margin-top: 8px;
+    font-size: 14px;
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    padding-left: 5px;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    background-color: #d3d3d3;
+    color: #D0637C;
+}
+
+button:hover{
+    background-color: rgba(208, 99, 124, 0.16);
+    border: 1px solid #D0637C;
 }
 
 a{
@@ -112,33 +137,52 @@ span{
     width: 350px;
 }
 
+.casa2:hover{
+    width: 450px;
+    z-index: 1;
+}
+
 .casa3{
     position: absolute;
     margin-top: 20%;
     width: 286px;
-    margin-left: 380px;
+    margin-left: 375px;
+}
+
+.casa3:hover{
+    width: 380px;
+    z-index: 1;
 }
 
 .casa4{
     position: absolute;
     margin-top: 20%;
     width: 284px;
-    margin-left: 700px;
+    margin-left: 690px;
+}
+
+.casa4:hover{
+    width: 380px;
+    z-index: 1;
 }
 
 .casa5{
     position: absolute;
     margin-top: 20%;
     width: 284px;
-    margin-left: 1020px;
+    margin-left: 1005px;
+}
+
+.casa5:hover{
+    width: 380px;
+    z-index: 1;
 }
 
 .casa-final{
     position: absolute;
     margin-top: 60%;
     margin-left: 30px;
-    background-color: white;
-    opacity: 0.4;
+    background-color: rgba(255, 255, 255, 0.16);
     z-index: 1;
     width: 75vw;
 }
