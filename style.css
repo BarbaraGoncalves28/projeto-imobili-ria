@@ -17,9 +17,8 @@ body{
 
 header h1{
     font-size: 60px;
-    
     text-align: center;
-    margin-top: 100px;
+    margin-top: 90px;
     font-family: "Luxurious Roman", serif;
 }
 
@@ -39,10 +38,8 @@ header h2{
 }
 
 input{
-    display: block;
     font-size: 16px;
-    margin: auto;
-    width: 500px;
+    width: 400px;
     height: 50px;
     border-radius: 50px;
     border: none;
@@ -51,11 +48,7 @@ input{
 }
 
 button{
-
-    display: block;
-    margin: auto;
     position: relative;
-    margin-top: 8px;
     font-size: 14px;
     width: 100px;
     height: 30px;
@@ -68,6 +61,10 @@ button{
     color: #D0637C;
 }
 
+section{
+    text-align: center;
+}
+
 button:hover{
     background-color: rgba(208, 99, 124, 0.16);
     border: 1px solid #D0637C;
@@ -77,7 +74,7 @@ a{
    color: white;
    font-size: 20px;
    text-decoration: none;
-   margin-left: 20px; 
+   margin-left: 80px; 
    font-family: "Poppins" , sans-serif;
 }
 
@@ -119,6 +116,7 @@ h2{
    color: white;
    font-size: 14px;
    margin-top: -200px;
+   margin-left: 25px;
    font-family: "Poppins", sans-serif;
 }
 
@@ -128,7 +126,7 @@ span{
 
 .casas{
     display: inline;
-    margin-left: 20px;
+    margin-left: 45px;
 }
 
 .casa2{
@@ -181,13 +179,13 @@ span{
 .casa-final{
     position: absolute;
     margin-top: 60%;
-    margin-left: 30px;
+    margin-left: 45px;
     background-color: rgba(255, 255, 255, 0.16);
     z-index: 1;
     width: 75vw;
 }
 
-.caixa{
+aside{
     display: block;
     flex-direction: column;
     color: black;
@@ -205,7 +203,6 @@ footer{
     position: absolute;
     margin-top: 110%;
     background-color: #D0637C;
-    z-index: -1;
     width: 100%;
     padding: 15px;
     height: 15px;
