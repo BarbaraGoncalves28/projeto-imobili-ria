@@ -2,78 +2,102 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
-form{
-    padding: 100px;
+body, html {
+    height: 100%;
+}
+
+main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    position: fixed;
-    margin-left: 350px;
-    margin-top: 70px;
+    padding: 30px;
     background-color: rgba(255, 255, 255, 0.16);
-    width: 700px;
-    height: 500px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    z-index: 1;
 }
 
-input{
-    width: 500px;
-    height: 500px;
-    padding-left: 5px;
+input {
+    padding: 10px;
     border-radius: 5px;
     outline: none;
     border: 1px solid #d0637c;
+    width: 100%;
 }
 
-button{
-    position: fixed;
-    margin-top: 310px;
-    margin-left: 190px;
-    width: 100px;
-    height: 30px;
-    border-radius: 5px;
-    outline: none;
-    border: none;
+button {
+    background-color: #d3d3d3;
     color: #d0637c;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-button:hover{
+button:hover {
     background-color: rgba(208, 99, 124, 0.16);
     border: 1px solid #D0637C;
 }
 
-.casa-principal{
+.casa-principal {
     position: fixed;
     top: 0;
+    left: 0;
     height: 100vh;
     width: 100vw;
+    object-fit: cover;
     z-index: -1;
 }
 
-.mascara{
+.mascara {
     height: 100%;
     width: 100%;
-    background:  linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
     position: fixed;
     top: 0;
     z-index: -1;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
-    position: fixed;
-    margin-top: 355px;
-    margin-left: 130px;
+    margin-top: 20px;
+    text-align: center;
+    display: inline-block;
 }
 
-a:hover{
-    font-size: 18px;
+a:hover {
     color: rgba(208, 99, 118, 0.50);
+}
+
+@media (max-width: 768px) {
+    form {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        max-width: 100%;
+    }
+
+    input {
+        font-size: 14px;
+    }
 }
